@@ -1,0 +1,10 @@
+- MinHeapNode done no leaks
+- MinHeap done no leaks
+
+- ExprTreeNode done no leaks
+
+- SymNode done, test w old for now
+- SymTable AVL, test w old for now
+
+- Parser done but untested and unleaktested
+- Compiler

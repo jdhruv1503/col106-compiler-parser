@@ -1,0 +1,142 @@
+==25263== Memcheck, a memory error detector
+==25263== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25263== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==25263== Command: ./main
+==25263== Parent PID: 21153
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D365: main (symtable.cpp:1062)
+==25263==  Address 0x4de1cd0 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AB60: SymbolTable::SymbolTable() (symtable.cpp:10)
+==25263==    by 0x10CB72: main (symtable.cpp:1023)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D3E5: main (symtable.cpp:1064)
+==25263==  Address 0x4de2790 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10D25E: main (symtable.cpp:1052)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10B688: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:352)
+==25263==    by 0x10D465: main (symtable.cpp:1066)
+==25263==  Address 0x4de2510 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CFDE: main (symtable.cpp:1042)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D4E5: main (symtable.cpp:1068)
+==25263==  Address 0x4de2410 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CEDE: main (symtable.cpp:1038)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B77D: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:378)
+==25263==    by 0x10D565: main (symtable.cpp:1070)
+==25263==  Address 0x4de2290 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CD5E: main (symtable.cpp:1032)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D63F: main (symtable.cpp:1076)
+==25263==  Address 0x4de2310 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CDDE: main (symtable.cpp:1034)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D719: main (symtable.cpp:1082)
+==25263==  Address 0x4de2690 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10ACEC: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:51)
+==25263==    by 0x10D15E: main (symtable.cpp:1048)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B77D: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:378)
+==25263==    by 0x10D7F3: main (symtable.cpp:1089)
+==25263==  Address 0x4de2490 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CF5E: main (symtable.cpp:1040)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D8CD: main (symtable.cpp:1095)
+==25263==  Address 0x4de2390 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CE5E: main (symtable.cpp:1036)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10D9A7: main (symtable.cpp:1101)
+==25263==  Address 0x4de2190 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CC5E: main (symtable.cpp:1028)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10DA81: main (symtable.cpp:1107)
+==25263==  Address 0x4de2590 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10ACEC: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:51)
+==25263==    by 0x10D05E: main (symtable.cpp:1044)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10DB5B: main (symtable.cpp:1113)
+==25263==  Address 0x4de2610 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10D0DE: main (symtable.cpp:1046)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B77D: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:378)
+==25263==    by 0x10DC35: main (symtable.cpp:1119)
+==25263==  Address 0x4de2210 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10AC40: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:33)
+==25263==    by 0x10CCDE: main (symtable.cpp:1030)
+==25263== 
+==25263== Mismatched free() / delete / delete []
+==25263==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10B5B0: SymbolTable::remove(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:333)
+==25263==    by 0x10DCB5: main (symtable.cpp:1121)
+==25263==  Address 0x4de2710 is 0 bytes inside a block of size 64 alloc'd
+==25263==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25263==    by 0x10ACEC: SymbolTable::insert(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) (symtable.cpp:51)
+==25263==    by 0x10D1DE: main (symtable.cpp:1050)
+==25263== 
+==25263== 
+==25263== HEAP SUMMARY:
+==25263==     in use at exit: 0 bytes in 0 blocks
+==25263==   total heap usage: 17 allocs, 17 frees, 74,640 bytes allocated
+==25263== 
+==25263== All heap blocks were freed -- no leaks are possible
+==25263== 
+==25263== For lists of detected and suppressed errors, rerun with: -s
+==25263== ERROR SUMMARY: 14 errors from 14 contexts (suppressed: 0 from 0)
